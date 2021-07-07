@@ -11,6 +11,7 @@ const JUMP_FORCE = 360
 const BIG_JUMP_FORCE = 550
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 const FALL_DEATH = 400
+const ENEMY_SPEED = 20
 
 let isJumping = true
 
@@ -166,8 +167,6 @@ scene("game", ({ level, score }) => {
     scoreLabel.value++
     scoreLabel.text = scoreLabel.value
   })
-
-  const ENEMY_SPEED = 20
 
   action('dangerous', (d) => {
     d.move(-ENEMY_SPEED, 0)
