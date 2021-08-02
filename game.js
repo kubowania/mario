@@ -1,3 +1,5 @@
+// Make sure to use Kaboom version 0.5.0 for this game by adding the correct script tag in the HTML file.
+
 kaboom({
   global: true,
   fullscreen: true,
